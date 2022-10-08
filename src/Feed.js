@@ -34,7 +34,7 @@ function Feed() {
   }, [])
 
   const sendPost = e => {
-    e.preventDefault();//entera bastığında sayfaya refresh atmayı engelliyor
+    e.preventDefault();//entera bastığında sayfaya refresh atmayı engelliyor ve verileri görünür şekilde sabit tutmayı sağlıyor.
 
     db.collection('posts').add({
       name: user.displayName,
